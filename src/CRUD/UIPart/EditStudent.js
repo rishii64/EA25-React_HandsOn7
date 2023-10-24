@@ -17,9 +17,9 @@ function EditStudent(){
         batch : data[Index].batch
     })
     const handleChange = (e)=>{
-        setInfo({info, [e.target.name] : e.target.value})
+        setInfo({...info, [e.target.name] : e.target.value})
     }
-    console.log(setInfo);
+    // console.log(info);
     const handleUpdate = ()=> {
         dispatch(editStudent({info, Index}))
         nav('/student')
