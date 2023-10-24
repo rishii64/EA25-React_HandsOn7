@@ -1,8 +1,9 @@
+import './App.css'
 import RouteCompo from './CRUD/UIPart/RouteCompo';
 
 function App() {
   return (
-    <div className="App">
+    <div className="apps">
       <RouteCompo />
     </div>
   );

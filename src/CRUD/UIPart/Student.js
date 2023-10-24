@@ -8,7 +8,7 @@ export default function Student() {
   return (
     <>
       <h1>Student Page</h1>
-      <table id='table' border={1}>
+      <table className='table' id='table' border={1}>
         <thead>
           <tr>
             <th>Name</th>
@@ -32,7 +32,7 @@ export default function Student() {
           })}
         </tbody>
         </table>
-        <button onClick={()=> nav('/addStudent')}>Add New Student</button>
+        <button className='newBtn' onClick={()=> nav('/addStudent')}>Add New Student</button>
     </>
   )
 }

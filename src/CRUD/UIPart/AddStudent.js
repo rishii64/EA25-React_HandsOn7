@@ -21,13 +21,29 @@ export default function AddStudent() {
     }
   return (
     <div>
-        <h2>New Student Page</h2>
-        <input type='text' name='name' placeholder='Enter name' onChange={handleChange} />
-        <input type='number' name='age' placeholder='Enter age' onChange={handleChange} />
-        <input type='text' name='course' placeholder='Enter course' onChange={handleChange} />
-        <input type='text' name='batch' placeholder='Enter batch' onChange={handleChange} />
-        <button onClick={handleSubmit}>Submit</button>
-        <button onClick={()=> nav(-1)}>Go Back</button>
+        <h1>New Student Page</h1>
+        <form className="editForm">
+            <div className='inputDetails'>
+                <label>Name: </label>
+                <input type='text' name='name' placeholder='Enter name' onChange={handleChange} />
+            </div>
+            <div className='inputDetails'>
+                <label>Age: </label>
+                <input type='number' name='age' placeholder='Enter age' onChange={handleChange} />
+            </div>
+            <div className='inputDetails'>
+                <label>Course: </label>
+                <input type='text' name='course' placeholder='Enter course' onChange={handleChange} />
+            </div>
+            <div className='inputDetails'>
+                <label>Batch: </label>
+                <input type='text' name='batch' placeholder='Enter batch' onChange={handleChange} />
+            </div>
+        </form>
+        <div className="btns">
+            <button className='submitBtn' onClick={handleSubmit}>Submit</button>
+            <button className="backBtn" onClick={()=> nav(-1)}>Go Back</button>
+        </div>
     </div>
   )
 }

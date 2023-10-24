@@ -8,11 +8,11 @@ import AddStudent from './AddStudent'
 
 export default function RouteCompo() {
   return (
-    <div>
+    <div className='links'>
         <BrowserRouter>
-            <NavLink to='/'>Home |</NavLink>
-            <NavLink to='/student'>Student |</NavLink>
-            <NavLink to='/contact'>Contact</NavLink>
+            <NavLink className='link' to='/'>Home</NavLink>
+            <NavLink className='link' to='/student'>Student</NavLink>
+            <NavLink className='link' to='/contact'>Contact</NavLink>
             <Routes>
                 <Route path='/' element={<Home/>} />
                 <Route path='/student' element={<Student/>} />

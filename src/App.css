@@ -1,3 +1,65 @@
-.App{
-    border: 1px solid red;
+*{
+    margin: 0;
+    padding: 0;
+    background: rgb(237, 243, 237);
+}
+.links{
+    text-align: center;
+    margin: 30px 0;
+}
+.link{
+    border-bottom: 1px solid rgb(110, 110, 110);
+    border-radius: 5px;
+    padding: 10px 50px;
+    background-color: rgb(238, 244, 186);
+}
+h1{
+    padding-top: 30px;
+    text-decoration: underline green;
+}
+.home{
+    display: grid;
+    place-items: center;
+    height: 50vh;
+}
+.table{
+    margin: 50px auto;
+}
+th{
+    padding: 10px;
+}
+tr,td{
+    padding: 5px;
+}
+.newBtn{
+    width: 11em;
+    height: 2.5em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.updateBtn,.backBtn,.submitBtn{
+    width: 7em;
+    height: 2.5em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.editForm,.ContactForm{
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+input{
+    width: 40%;
+    height: 25px;
+    padding: 0 20px;
+    border: 1px solid;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
